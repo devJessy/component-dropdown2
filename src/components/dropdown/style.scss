@@ -1,0 +1,33 @@
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.dropdown-header{
+    background : #363232;
+    padding : 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.dropdown-items {
+    background : #363232;
+    margin-top: -12px;
+    transition: .5s;
+    padding: 10px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-item {
+    padding: 10px;
+    background : #363232;
+    color: white;
+}
+
+.dropdown-item:hover {
+    background : #242020;
+}
