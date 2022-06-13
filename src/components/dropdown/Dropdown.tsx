@@ -49,9 +49,9 @@ const Dropdown = (props : DropdownProps) => {
                     <NarrowIcon />
                 </div>
             </div>
-            <div className='dropdown-items' style={{opacity : showItems}}>
+            <div className='dropdown-items' style={{opacity : showItems, visibility : showItems ? 'visible' : 'hidden'}}>
                 {
-                    showItems && props.items.map((row : any, index) => {
+                   props.items.map((row : any, index) => {
                         return (
                             <div key={index} className='dropdown-item' onClick={() => handle(row.title)}>{row.title}</div>
                         )
